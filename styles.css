@@ -49,14 +49,14 @@ body::after {
 /*the animation*/
 @keyframes animate {
   0% {
-    top: calc(100% - 212px);
-  }
-  50% {
-    height: 100px;
     top: 0;
   }
+  50% {
+    top: calc(100% - 180px);
+    height: 7.32vw;
+  }
   100% {
-    top: calc(100% - 212px);
+    top: 0;
   }
 }
 
