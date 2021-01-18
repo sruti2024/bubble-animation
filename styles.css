@@ -1,0 +1,356 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow: hidden;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-image: url("./img2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 140px;
+  background-image: url("./img1.png");
+  background-size: contain;
+}
+.dot {
+  transform-style: preserve-3d;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.dot li {
+  position: absolute;
+  list-style: none;
+  border: 5px;
+  border-radius: 50%;
+  animation: animate 3.4s ease-in-out infinite;
+}
+
+/*the animation*/
+@keyframes animate {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: calc(100% - 180px);
+    height: 7.32vw;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+/*========each bubble is defined in a seperate section to give it different color ,opacity,delay and duration(i.e different speed)=======*/
+.dot li:nth-child(1) {
+  top: 45.66%;
+  left: 36.6%;
+  bottom: 0px;
+  right: 0px;
+  height: 14.64vw;
+  width: 14.64vw;
+  background-color: #df0101;
+  opacity: 0.8;
+  animation-delay: 0.1s;
+}
+
+.dot li:nth-child(2) {
+  top: 45.66%;
+  left: 7.32%;
+  height: 8.78vw;
+  width: 8.78vw;
+  background-color: red;
+  opacity: 0.9;
+  animation-delay: 0.5s;
+}
+
+.dot li:nth-child(3) {
+  top: 45.66%;
+  left: 18.3%;
+  height: 11.71vw;
+  width: 11.71vw;
+  background-color: yellow;
+  opacity: 0.7;
+  animation-delay: 0.3s;
+  animation-direction: reverse;
+}
+
+.dot li:nth-child(4) {
+  top: 45.66%;
+  left: 14.64%;
+  height: 12.44vw;
+  width: 12.44vw;
+  background-color: pink;
+  opacity: 0.7;
+  animation-delay: 0.2s;
+  animation-direction: reverse;
+  animation-duration: 2.7s;
+}
+
+.dot li:nth-child(5) {
+  top: 45.66%;
+  left: 43.92%;
+  height: 13.9vw;
+  width: 13.9vw;
+  background-color: orange;
+  opacity: 0.6;
+  animation-delay: 0.1s;
+  animation-direction: reverse;
+  animation-duration: 2.8s;
+}
+
+.dot li:nth-child(6) {
+  top: 45.66%;
+  left: 19.76%;
+  height: 10.98vw;
+  width: 10.98vw;
+  background-color: #df0101;
+  opacity: 0.7;
+  animation-delay: 0.3s;
+  animation-direction: reverse;
+  animation-duration: 2.9s;
+}
+
+.dot li:nth-child(7) {
+  top: 45.66%;
+  left: 21.96%;
+  height: 14.64vw;
+  width: 14.64vw;
+  background-color: purple;
+  opacity: 0.8;
+  animation-delay: 0.1s;
+  animation-duration: 2.8s;
+}
+
+.dot li:nth-child(8) {
+  top: 47.18%;
+  left: 29.28%;
+  height: 13.9vw;
+  width: 13.9vw;
+  background-color: green;
+  opacity: 0.9;
+  animation-delay: 0.3s;
+  animation-direction: reverse;
+  animation-duration: 2.3s;
+}
+
+.dot li:nth-child(9) {
+  top: 45.66%;
+  left: 0.73%;
+  height: 14.64vw;
+  width: 14.64vw;
+  background-color: maroon;
+  opacity: 0.8;
+  animation-delay: 0.3s;
+  animation-direction: reverse;
+  animation-duration: 2.9s;
+}
+.dot li:nth-child(10) {
+  top: 41.09%;
+  left: 9.51%;
+  height: 15.3vw;
+  width: 15.3vw;
+  background-color: darkblue;
+  opacity: 0.7;
+  animation-delay: 0.6s;
+  animation-duration: 2.7s;
+}
+
+.dot li:nth-child(11) {
+  top: 47.18%;
+  left: 13.17%;
+  height: 8.05vw;
+  width: 8.05vw;
+  background-color: hotpink;
+  opacity: 0.8;
+  animation-delay: 0.3s;
+  animation-direction: reverse;
+  animation-duration: 2.8s;
+}
+
+.dot li:nth-child(12) {
+  top: 44.14%;
+  left: 40.26%;
+  height: 15.3vw;
+  width: 15.3vw;
+  background-color: lime;
+  opacity: 0.9;
+  animation-delay: 0.7s;
+  animation-duration: 2.7s;
+}
+
+.dot li:nth-child(13) {
+  top: 45.66%;
+  left: 43.92%;
+  height: 8.05vw;
+  width: 8.05vw;
+  background-color: aqua;
+  opacity: 0.8;
+  animation-delay: 0.5s;
+  animation-direction: reverse;
+  animation-duration: 2.6s;
+}
+
+.dot li:nth-child(14) {
+  top: 45.66%;
+  left: 49.78%;
+  height: 12.07vw;
+  width: 12.07vw;
+  background-color: #ff4105;
+  opacity: 0.7;
+  animation-delay: 0.3s;
+  animation-direction: reverse;
+  animation-duration: 2.8s;
+}
+
+.dot li:nth-child(15) {
+  top: 42.61%;
+  left: 47.58%;
+  height: 15.3vw;
+  width: 15.3vw;
+  background-color: #a5df00;
+  opacity: 0.9;
+  animation-delay: 0.4s;
+  animation-duration: 2.7s;
+}
+
+.dot li:nth-child(16) {
+  top: 45.66%;
+  left: 51.244%;
+  height: 10.24vw;
+  width: 10.24vw;
+  background-color: #a97f58;
+  opacity: 0.9;
+  animation-delay: 0.5s;
+  animation-direction: reverse;
+  animation-duration: 2.6s;
+}
+
+.dot li:nth-child(17) {
+  top: 45.66%;
+  left: 54.17%;
+  height: 13.17vw;
+  width: 13.17vw;
+  background-color: #5f04b4;
+  opacity: 0.8;
+  animation-delay: 0.44s;
+
+  animation-duration: 2.8s;
+}
+
+.dot li:nth-child(18) {
+  top: 42.61%;
+  left: 56.36%;
+  height: 15.3vw;
+  width: 15.3vw;
+  background-color: #3b0b0b;
+  opacity: 0.9;
+  animation-delay: 0.6s;
+  animation-duration: 2.6s;
+}
+
+.dot li:nth-child(19) {
+  top: 45.66%;
+  left: 58.56%;
+  height: 10.24vw;
+  width: 10.24vw;
+  background-color: #ff0040;
+  opacity: 0.9;
+  animation-delay: 0.5s;
+  animation-direction: reverse;
+  animation-duration: 2.3s;
+}
+
+.dot li:nth-child(20) {
+  top: 42.61%;
+  left: 62.22%;
+  height: 14.64vw;
+  width: 14.64vw;
+  background-color: #0431b4;
+  opacity: 0.8;
+  animation-delay: 0.56s;
+  animation-duration: 2.8s;
+}
+
+.dot li:nth-child(21) {
+  top: 44.14%;
+  left: 65.88%;
+  height: 13.17vw;
+  width: 13.17vw;
+  background-color: #ffff00;
+  opacity: 0.9;
+  animation-delay: 0.8s;
+  animation-duration: 2.6s;
+}
+
+.dot li:nth-child(22) {
+  top: 45.66%;
+  left: 71.01%;
+  height: 10.98vw;
+  width: 10.98vw;
+  background-color: #00ff80;
+  opacity: 0.9;
+  animation-delay: 0.7s;
+  animation-direction: reverse;
+  animation-duration: 2.3s;
+}
+
+.dot li:nth-child(23) {
+  top: 44.14%;
+  left: 78.33%;
+  height: 13.9vw;
+  width: 13.9vw;
+  background-color: #ff8000;
+  opacity: 0.9;
+  animation-delay: 0.8s;
+  animation-duration: 2.4s;
+}
+
+.dot li:nth-child(24) {
+  top: 45.66%;
+  left: 86.38%;
+  height: 10.98vw;
+  width: 10.98vw;
+  background-color: #fa58ac;
+  opacity: 0.9;
+  animation-delay: 0.7s;
+  animation-direction: reverse;
+  animation-duration: 2.3s;
+}
+
+.dot li:nth-child(25) {
+  top: 45.66%;
+  left: 87.11%;
+  height: 12.44vw;
+  width: 12.44vw;
+  background-color: #2a0a0a;
+  opacity: 0.9;
+  animation-delay: 0.9s;
+  animation-direction: reverse;
+  animation-duration: 2.6s;
+}
+
+@media (max-width: 730px) {
+  body::after {
+    background-size: cover;
+  }
+}
